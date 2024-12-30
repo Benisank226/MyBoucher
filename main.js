@@ -1,0 +1,1 @@
+console.log ("Bienvenue dans l'entreprise Ets Sankara & Fils")

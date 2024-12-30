@@ -1,0 +1,404 @@
+*{
+  margin:0;
+  padding :0 ;
+  font-family :sans-serif ;
+}
+body{
+  height :100%;
+  overflow-x: none ;
+}
+
+.nav_bar {
+  padding :20px ;
+  display :flex ;
+  justify-content :space-between ;
+  text-align :center ;
+  top:0%;
+  z-index: 999;
+  position :sticky ;
+  background-color :black ;
+  
+}
+.nav_bar .logo h2{
+  cursor: pointer;
+  color :white ;
+  width :max-content ;
+  font-size :15px ;
+  background-color :blue ;
+  padding :20px ;
+  
+}
+.nav_bar .menu li{
+  list-style :none ;
+  display :inline-block ;
+}
+.nav_bar .menu li a{
+  text-decoration :none ;
+  display :block ;
+  margin-left :20px;
+  color :white;
+  font-weight :bold ;
+  font-size :50px ;
+  border-bottom :4px solid transparent;
+}
+.nav_bar .menu li .active{
+  border-bottom :4px solid #E60B0B;
+}
+.nav_bar .menu li a:hover {
+  border-bottom: 4px solid #E60B0B ;
+}
+.content{
+  color:#414244;
+  background-repeat: no-repeat;
+  background-size :cover ;
+  display :flex ;
+  flex-direction :column ;
+  justify-content :center;
+  align-items :flex-start ;
+  padding :0 5%;
+  height:35vh;
+  background-image: url("Carte de visite.png");
+}
+.content h1{
+  font-size: 40px;
+  color:#FFE500;
+}
+.content p{
+  font-size: 20px;
+  margin-top :20px ;
+  color:#FFE500;
+  font-weight :bold ;
+  font-size :25px;
+}
+.content button{
+  background:#E60B0B;
+  margin-top :30px;
+  padding :15px 30px;
+  border:none ;
+  color: white ;
+  cursor :pointer ;
+  font-weight :bold ;
+  border-radius :10px;
+}
+.produits_texte{
+  text-align :left ;
+  font-size: 30px;
+  font-weight :300px;
+  color :#F1FF0B;
+  margin-top:10px;
+  margin-left: 80px;
+  padding-bottom :20px ;
+}
+.section_produits{
+  padding :10px 5%;
+}
+.produits{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+}
+.produits .carte{
+  width :310px;
+  background:#f5f5f5;
+  box-shadow : 0 10px 20px rgba(0, 0, 0, 0.3) ;
+  border-radius: 10px ;
+  margin-bottom: 20px;
+  
+}
+.produits .carte img{
+  height :250;
+  width :310px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor :pointer ;
+}
+.produits .carte img:hover {
+     transform:scale(1.2);
+}
+.produits .carte .desc{
+  padding :10px 20px;
+  opacity: 0.8;
+}
+.produits .carte .titre{
+  font-weight :900 ;
+  color :#424144;
+  padding :0 20px;
+  font-size: 20px ;
+}
+.produits .carte .box{
+  display :flex ;
+  
+  align-items :center ;
+  padding :20px ;
+  
+  
+}
+.produits .carte .prix {
+  color :#FF3F3F;
+  font-weight :bold ;
+  font-size :20px;
+}
+.achat{
+  text-decoration :none ;
+  color :red;
+  border :2px solid #7B7B7F ;
+  border-radius :5px ;
+  font-family :fantasy ;
+  font-weight :bold ;
+  padding :10px ;
+}
+
+
+.produits .carte .box .achat:hover{
+  background-color :black ;
+  cursor :pointer ;
+  color:white ;
+}
+.sou_menu {
+  position :relative ;
+}
+.sous-nav {
+  display :none ;
+  position :absolute ;
+  background-color:#000;
+  top:40px;
+  left:0 ;
+  text-align :left ;
+  
+}
+.sou_menu:hover .sous-nav {
+  display :block ;
+}
+.menu .para{
+  position :relative ;
+} 
+.menu .para .sous_services{
+  display :none ;
+  position :absolute ;
+  top :40px ;
+  padding-bottom :10px ;
+  background-color :black ;
+  text-align :left ;
+  right: 0 ;
+}
+.sous_services li a{
+  width :max-content ;
+  height :10px ;
+  padding :50px ;
+}
+.sous_services li a:hover {
+  border :none;
+}
+
+.para:hover .sous_services {
+  display :block ;
+}
+
+footer{
+  
+  background-color :#000;
+  padding :10px ;
+  
+}
+.foot ul{
+  display :flex ;
+  width :max-content ;
+  font-size :10px;
+}
+
+.foot li{
+ list-style :none ;
+}
+.foot li a{
+  text-decoration :none ;
+  color :white;
+  padding :10px ;
+  margin :20px ;
+  
+}
+footer .fin{
+  color :white ;
+  padding-top:20px ;
+  text-align :center ;
+  font-size: 10px;
+}
+.grille_tarifaire{
+  padding: 10px;
+  padding-left :50px;
+}
+
+table,td,th{
+  border: 2px solid #000;
+  border-collapse: collapse;
+}
+td,th{
+  padding: 10px;
+  width: 200px;
+}
+table caption{
+  background-color :aqua ;
+  font-weight :bold ;
+  font-size :20px ;
+  padding :10px ;
+  font-family :fantasy ;
+  
+}
+.tableau th{
+  font-family :fantasy ;
+  background-color :#81C4B8;
+}
+.tableau td{
+  font-weight :bold ;
+  font-family :fantasy;
+}
+.tarif_desc{
+  font-weight :100 ;
+}
+.blog{
+  padding :20px ;
+  padding-left :50px;
+}
+.commander {
+  width :310px;
+background:#f5f5f5;
+box-shadow : 0 10px 20px rgba(0, 0, 0, 0.3);
+border-radius: 10px;
+margin-bottom: 20px;
+
+}
+.commander h2{
+  font-family :fantasy ;
+  padding :10px ;
+  color :#3443EC;
+}
+.commander .mes{
+  font-family: serif ;
+  font-weight: bold ;
+}
+.commander ul{
+  list-style :none ;
+}
+.commander li{
+  padding :20px ;
+  width :310px;
+  
+}
+.commander li a{
+  border :2px solid black ;
+  text-decoration :none ;
+  background-color :#BDC3C3 ;
+  color :#000 ;
+  font-family :fantasy ;
+  font-weight :bold ;
+  height :100px ;
+  padding :10px; 
+  font-size :20px ;
+}
+.commander li a img {
+  vertical-align :sub;
+  padding-right :10px ;
+}
+.infos_ets {
+  background-color :aqua ;
+}
+.infos_ets h2{
+  font-family :fantasy ;
+  padding :10px ;
+  color :#3443EC;
+}
+.infos_ets p{
+  font-family :monospace ;
+  
+}
+.appel {
+  position :relative ;
+  
+}
+.reseau {
+  display :none;
+  position :absolute;
+  left:120px;
+  top :0;
+}
+.reseau li a{
+  border :2px solid blue ;
+  background-color :black ;
+  color :white ;
+}
+.appel:hover .reseau{
+  display :block ;
+}
+.sms{
+  position :relative ;
+  
+}
+.sms_reseau{
+  display :none;
+  position :absolute;
+  left:120px ;
+  top :0;
+}
+.sms_reseau li a{
+  border :2px solid blue ;
+  background-color :black ;
+  color :white ;
+}
+.sms:hover .sms_reseau{
+  display :block ;
+}
+.sis{
+  
+}
+.sis h2{
+  color :blue ;
+  padding :10px ;
+  font-family: fantasy ;
+}
+#sis p{
+  font-family :monospace ;
+  background-color :aqua ;
+}
+
+.querie_menu{
+  display :block;
+}
+.querie_menu a {
+  position :absolute;
+  cursor :pointer ;
+}
+.querie_menu img {
+  width :40px ;
+}
+#section_produits{
+  display :none ;
+  position :relative ;
+  left: 0 ;
+  background-color :#000 ;
+  padding:20px ;
+  
+}
+.querie_menu .img_querie:hover #section_produits{
+  display :block ;
+}
+#produits_texte{
+  color:#424144;
+}
+.produits_type{
+  border :2px solid black ;
+  background-color :red;
+  color :white ;
+  height :20px;
+  padding-top :10px;
+  padding-bottom :10px ;
+  margin-bottom :20px ;
+  font-family :fantasy ;
+  text-align :left ;
+  font-size :20px ;
+}
+
+
+
+
+
